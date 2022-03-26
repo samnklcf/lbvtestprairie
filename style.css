@@ -1,0 +1,637 @@
+@font-face {
+    font-family: 'mt';
+    src: url('./fonts/BebasNeue-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'montserrat';
+    src: url('./fonts/MontserratAlternates-ExtraLight.ttf');
+}
+
+@font-face {
+    font-family: 'roto';
+    src: url('./fonts/Raleway-VariableFont_wght.ttf');
+}
+
+@font-face {
+    font-family: 'mont2';
+    src: url('./fonts/Montserrat-VariableFont_wght.ttf');
+}
+
+:root {
+    --Noire: #282B2E;
+    --noire2: #1f2124;
+    --lien: #2A2A2A;
+    --vert: #4AA36B;
+    --fondgray: #f1f1f1;
+    --blanc: rgb(236, 236, 236);
+    --blanc2: rgb(214, 214, 214);
+    --jaune: #DDAE71;
+    --fauxnoir: rgb(100, 100, 100);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 20px;
+
+}
+
+
+/*----------------------Partie header----------------------------------------*/
+
+header {
+    display: flex;
+    height: 90px;
+
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'mt';
+    padding: 0 150px;
+    position: sticky;
+    top: 0;
+    right: 0;
+    left: 0;
+
+    z-index: 100;
+    background-color: white;
+    border-bottom: 1px solid rgb(149, 149, 149);
+}
+
+a {
+    color: var(--lien);
+    text-decoration: none;
+
+}
+
+button {
+    font-family: 'mt';
+    font-size: 20px;
+}
+
+.contlogo {
+    background-color: var(--Noire);
+    height: 250px;
+    width: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 20;
+}
+
+.contlogo img {
+    width: 90px;
+    margin-top: 40px;
+
+}
+
+header nav {
+
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    right: 50px;
+
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    gap: 15px;
+
+}
+
+ul li a img {
+    width: 15px;
+}
+
+.order {
+    padding: 7px 30px;
+    margin-left: 10px;
+    background: white;
+    border: 3px solid var(--Noire);
+    cursor: pointer;
+    transition: all .5s ease;
+
+}
+
+.order:hover {
+    background-color: var(--Noire);
+    color: white;
+
+
+
+}
+
+.cout {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.cout .panier {
+    border-right: .5px solid;
+    padding-right: 10px;
+    position: relative;
+
+}
+
+.panier:before {
+    content: '2';
+    background-color: var(--vert);
+    border-radius: 50%;
+    font-size: 12px;
+    padding: 4px 8px;
+    position: absolute;
+    left: 22px;
+    font-weight: 900px;
+    color: #F3F4F4;
+
+}
+
+/*---------------------partie Main----------------------*/
+main {
+    padding: 0px 45px;
+
+}
+
+.brand {
+    background-color: var(--fondgray);
+    height: 550px;
+    position: relative;
+
+}
+
+.photo {
+    height: 100%;
+    width: 87%;
+    background-image: url('./images/slider-dessert.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.block {
+    width: 450px;
+    height: 380px;
+
+    z-index: 10;
+    position: absolute;
+    top: 100px;
+    right: 100px;
+
+
+}
+
+.block .haut {
+    height: 82%;
+    background-color: var(--Noire);
+    padding: 40px;
+    display: block;
+    justify-content: end;
+
+}
+
+.haut h1 {
+    font-family: 'montserrat';
+    font-weight: 100;
+    font-size: 40px;
+    color: var(--blanc);
+}
+
+.haut p {
+    color: var(--blanc2);
+    margin-top: 20px;
+}
+
+.haut button {
+    padding: 15px 30px;
+    background: none;
+    border: 3px solid var(--jaune);
+    margin-top: 20px;
+    transition: all .5s ease-in;
+    cursor: pointer;
+
+}
+
+.haut button:hover {
+    background-color: var(--jaune);
+}
+
+.haut button a {
+    color: white;
+}
+
+
+
+.block .bas {
+    height: 18%;
+    display: flex;
+    justify-content: end;
+    gap: .5px;
+}
+
+.left,
+.right {
+    height: 100%;
+    width: 65px;
+    background-color: var(--noire2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    fill: var(--blanc);
+}
+
+.left {
+    border-right: 1px solid gray;
+}
+
+
+/*----------------section2------------------------------*/
+
+.temoignage {
+    height: 850px;
+    display: flex;
+
+
+}
+
+.temoignage .text {
+    width: 50%;
+    padding: 50px 0 0 50px;
+}
+
+
+
+
+.temoignage .text h1 {
+    font-family: 'mont2';
+    font-weight: 200;
+    color: var(--fauxnoir);
+    font-size: 45px;
+    margin-top: 20px;
+}
+
+.temoignage .text p {
+    font-family: 'mont2';
+    font-weight: 200;
+    margin-top: 20px;
+}
+
+.temoignage svg {
+    margin-top: 40px;
+    margin-left: 50px;
+    position: relative;
+    right: 45px;
+}
+
+
+
+.temoignage .image {
+    width: 50%;
+    background-image: url("./images/bg-food.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+
+}
+
+
+/* ----------partie bar--------- */
+
+.bar {
+    height: 300px;
+    background-color: var(--Noire);
+    display: flex;
+
+}
+
+.bar .cont {
+    height: 100%;
+    width: 33%;
+    display: flex;
+    padding-top: 90px;
+    padding-left: 60px;
+
+}
+
+.icon1,
+.icon2,
+.icon3 {
+    width: 25%;
+
+    margin-right: 10px;
+}
+
+
+
+.cont h1 {
+    font-family: 'montserrat';
+    color: var(--blanc);
+    font-weight: 200;
+}
+
+.cont p {
+    font-family: 'montserrat';
+    color: var(--blanc2);
+    font-weight: 800;
+    font-size: 14px;
+    margin-top: 4px;
+}
+
+.transition {
+    font-family: 'mont2';
+    font-weight: 200;
+    color: var(--fauxnoir);
+    font-size: 45px;
+    padding: 50px 0 50px 50px;
+}
+
+.menu {
+    height: 300px;
+    display: flex;
+
+}
+
+.slide {
+    width: 33.33%;
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    transition: all .5s ease-out;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+
+}
+
+.slide:hover {
+    background-position: center;
+    width: 50%;
+
+
+}
+
+.slide h1 {
+    font-family: 'mont2';
+    font-weight: 100;
+    color: var(--blanc);
+    font-size: 52px;
+    position: absolute;
+    bottom: 60px;
+    right: 40px;
+
+}
+
+.one {
+    background-image: url('./images/menu-sample-burgers.jpg');
+
+}
+
+.two {
+    background-image: url('./images/menu-sample-pizza.jpg');
+
+
+}
+
+.three {
+    background-image: url('./images/menu-sample-sushi.jpg');
+
+}
+
+.center {
+    font-family: 'mont2';
+    font-weight: 200;
+    color: var(--fauxnoir);
+    font-size: 45px;
+    padding: 50px 0 50px 50px;
+    text-align: center;
+    background-color: #ececec;
+
+}
+
+.special {
+    height: 450px;
+    padding-left: 60px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    position: relative;
+    background-color: #ececec;
+
+}
+
+.bg {
+    background-color: #DDAE71;
+    width: 50%;
+    height: 100%;
+    background-image: url('./images/special-burger.jpg');
+    background-repeat: no-repeat;
+
+    background-size: cover;
+    transition: all 1s ease;
+
+
+
+}
+
+.bg:hover {
+    background-position: center;
+
+}
+
+.offers {
+    height: 300px;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    z-index: 10;
+    width: 45%;
+    bottom: 40px;
+    right: 100px;
+    padding: 40px;
+
+
+}
+
+.offers h1 {
+    font-family: 'mont2';
+    font-weight: 100;
+    font-size: 40px;
+    color: var(--fauxnoir);
+}
+
+.offers p {
+    font-family: 'mont2';
+    color: var(--fauxnoir);
+    font-weight: 100;
+    font-size: 18px;
+}
+
+.offers .check {
+    margin-top: 30px;
+}
+
+.offers .check p {
+    margin-top: 7px;
+}
+
+.check p img {
+    margin-right: 10px;
+}
+
+.video {
+    background-color: #4AA36B;
+    height: 400px;
+    background-image: url('./images/bg-croissant.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+.video h1 {
+    font-family: 'mont2';
+    font-weight: 100;
+    font-size: 40px;
+    color: var(--blanc);
+}
+
+.video p {
+    font-family: 'mont2';
+    color: var(--blanc);
+    font-weight: 100;
+    font-size: 18px;
+}
+
+.video svg {
+    margin-top: 40px;
+    fill: var(--jaune);
+    transition: all 1s ease;
+
+}
+
+.video svg:hover {
+    fill: var(--jaune);
+}
+
+footer {
+    background-color: var(--Noire);
+    display: flex;
+    height: 300px;
+    padding-top: 40px;
+    margin: 0 45px;
+
+
+
+
+}
+
+.logo2 {
+    width: 33.33%;
+    background-color: #4AA36B;
+    height: 100%;
+
+
+
+}
+
+.link {
+    width: 33.33%;
+    height: 100%;
+
+    height: 100%;
+
+
+}
+
+.formulaire {
+    width: 33.33%;
+    align-items: center;
+    height: 100%;
+}
+
+
+
+footer img {
+    width: 100px;
+}
+
+footer form {
+    background-color: white;
+    margin-right: 120px;
+    width: 100%;
+    margin: 12px;
+}
+
+footer form input {
+    width: 70%;
+}
+
+footer form button,
+footer form input {
+    padding: 12px;
+}
+
+.cout svg {
+    display: none;
+}
+
+
+
+
+
+
+@media all and (max-width: 1285px) {
+    header {
+        padding: 0 20px;
+    }
+
+    header nav {
+        display: none;
+    }
+
+    main {
+        padding: 0;
+    }
+
+    .cout svg {
+        display: block;
+    }
+
+    .contlogo {
+
+        height: 100px;
+        width: 100px;
+        align-items: end;
+        justify-content: center;
+        background: none;
+
+
+
+    }
+
+    .contlogo img {
+        margin-bottom: 10px;
+        width: 70px;
+        padding: 10px;
+        background-color: #1f2124;
+        border-radius: 12px;
+
+    }
+
+}
