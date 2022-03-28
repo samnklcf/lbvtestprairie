@@ -102,7 +102,7 @@ header nav {
     align-items: center;
     justify-content: space-between;
     position: relative;
-    right: 50px;
+    right: 20px;
 
 }
 
@@ -130,9 +130,6 @@ ul li a img {
 .order:hover {
     background-color: var(--Noire);
     color: white;
-
-
-
 }
 
 .cout {
@@ -146,7 +143,6 @@ ul li a img {
     border-right: .5px solid;
     padding-right: 10px;
     position: relative;
-
 }
 
 .panier:before {
@@ -159,7 +155,6 @@ ul li a img {
     left: 22px;
     font-weight: 900px;
     color: #F3F4F4;
-
 }
 
 /*---------------------partie Main----------------------*/
@@ -318,6 +313,7 @@ main {
     height: 300px;
     background-color: var(--Noire);
     display: flex;
+    flex-wrap: wrap;
 
 }
 
@@ -371,7 +367,6 @@ main {
 .slide {
     width: 33.33%;
     position: relative;
-
     display: flex;
     justify-content: center;
     transition: all .5s ease-out;
@@ -465,8 +460,6 @@ main {
     bottom: 40px;
     right: 100px;
     padding: 40px;
-
-
 }
 
 .offers h1 {
@@ -609,6 +602,7 @@ footer form input {
     place-content: center;
     list-style: none;
     transition: all .1s ease-in;
+    z-index: 60;
 
 
 }
@@ -619,6 +613,7 @@ footer form input {
     text-align: center;
     transition: all 0.1s ease-in;
     cursor: pointer;
+    margin-top: 20px;
 
 }
 
@@ -639,6 +634,12 @@ footer form input {
 
 .op {
     cursor: pointer;
+}
+
+.pa {
+    fill: back;
+    font-weight: 900;
+
 }
 
 
@@ -684,6 +685,235 @@ footer form input {
 
     .menu2 {
         display: grid;
+    }
+
+    .cont h1 {
+        font-family: 'montserrat';
+        color: var(--blanc);
+        font-weight: 200;
+        font-size: 25px;
+    }
+
+    .cont p {
+        font-family: 'montserrat';
+        color: var(--blanc2);
+        font-weight: 800;
+        font-size: 12px;
+        margin-top: 2px;
+
+    }
+
+
+}
+
+@media all and (max-width: 1080px) {
+    .brand {
+        background-color: var(--fondgray);
+        height: 550px;
+        position: relative;
+
+    }
+
+    .photo {
+        height: 100%;
+        width: 100%;
+        background-image: url('./images/slider-dessert.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+
+    .block {
+        width: 450px;
+        height: 380px;
+
+        z-index: 10;
+        position: absolute;
+        top: 100px;
+        right: 0px;
+
+
+    }
+
+    .temoignage {
+        height: auto;
+        display: flex;
+
+
+    }
+
+    .transition {
+        font-family: 'mont2';
+        font-weight: 200;
+        color: var(--fauxnoir);
+        font-size: 30px;
+        padding: 25px 0 25px 25px;
+    }
+
+    .center {
+        font-size: 30px;
+        padding: 25px;
+    }
+
+
+
+
+
+
+    .temoignage .text h1 {
+        font-size: 25px;
+        margin-top: 20px;
+    }
+
+    .temoignage .text p {
+        font-size: 16px;
+    }
+
+    .slide h1 {
+        font-size: 30px;
+        position: absolute;
+        bottom: 50px;
+        right: 30px;
+
+    }
+
+    .offers h1 {
+        font-size: 25px;
+    }
+
+    .offers p {
+        font-size: 14px;
+    }
+
+    .temoignage {
+        display: flex;
+
+
+
+    }
+}
+
+@media all and (max-width: 600px) {
+    .temoignage .text {
+        width: 50%;
+
+    }
+
+    .temoignage .text .tem {
+        width: 300px;
+        height: 200px;
+
+    }
+
+    .temoignage .image {
+        width: 50%;
+        height: 500px;
+        padding: 50px 0 0 50px;
+    }
+
+    .bar {
+
+        height: auto;
+        flex-direction: column;
+        padding-bottom: 40px;
+    }
+
+    .bar .cont {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        padding-top: 90px;
+        padding-left: 60px;
+
+    }
+
+    .special {
+        padding-left: 30px;
+        padding-top: 0px;
+        padding-bottom: 20px;
+
+    }
+
+
+    .contlogo {
+        width: 75px;
+        align-items: end;
+        justify-content: center;
+        background: none;
+        background-color: #1f2124;
+    }
+
+    .contlogo img {
+        transition: all 1s ease;
+        width: 40px;
+
+
+    }
+
+    .offers {
+        padding: 10px;
+    }
+
+    .block {
+        width: 450px;
+        height: 380px;
+
+        z-index: 10;
+        position: absolute;
+        top: 100px;
+        right: 100px;
+        display: none;
+
+
+    }
+
+    .block .haut {
+        height: 82%;
+        background-color: var(--Noire);
+        padding: 40px;
+        display: block;
+        justify-content: end;
+
+    }
+
+    .haut h1 {
+        font-family: 'montserrat';
+        font-weight: 100;
+        font-size: 40px;
+        color: var(--blanc);
+    }
+
+    .haut p {
+        color: var(--blanc2);
+        margin-top: 20px;
+    }
+
+    .haut button {
+        padding: 15px 30px;
+        background: none;
+        border: 3px solid var(--jaune);
+        margin-top: 20px;
+        transition: all .5s ease-in;
+        cursor: pointer;
+
+    }
+
+    .haut button:hover {
+        background-color: var(--jaune);
+    }
+
+    .haut button a {
+        color: white;
+    }
+
+
+
+    .block .bas {
+        height: 18%;
+        display: flex;
+        justify-content: end;
+        gap: .5px;
     }
 
 }
